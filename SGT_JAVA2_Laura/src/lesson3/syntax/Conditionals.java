@@ -2,18 +2,18 @@ package lesson3.syntax;
 
 public class Conditionals {
     public static void main(String[] args) {
-        String myName = "Artjoms";
+        String myName = "Laura";
 
-        if( myName == "Artjoms") {
+        if( myName == "Laura") {
             System.out.println("Yes indeed!");
         } else {
             System.out.println("Nope, it is not");
         }
 
-        String whatIsMyname = myName == "Artjoms" ? "It is Artjoms" : "It is not Artjoms";
+        String whatIsMyname = myName == "Laura" ? "It is Laura" : "It is not Laura";
         System.out.println(whatIsMyname);
 
-        whatIsMyname = myName == "Arvids" ? "It is Artjoms" : "It is not Artjoms";
+        whatIsMyname = myName == "Linda" ? "It is Laura" : "It is not Laura";
         System.out.println(whatIsMyname);
 
         System.out.println(oddOrEven1(7));
