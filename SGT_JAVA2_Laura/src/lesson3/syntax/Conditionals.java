@@ -13,7 +13,7 @@ public class Conditionals {
         String whatIsMyname = myName == "Laura" ? "It is Laura" : "It is not Laura";
         System.out.println(whatIsMyname);
 
-        whatIsMyname = myName == "Linda" ? "It is Laura" : "It is not Laura";
+        whatIsMyname = myName == "Beatrise" ? "It is Laura" : "It is not Laura";
         System.out.println(whatIsMyname);
 
         System.out.println(oddOrEven1(7));
