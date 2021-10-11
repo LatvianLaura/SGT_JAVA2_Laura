@@ -1,87 +1,78 @@
 package lesson4;
 
-public class ControlFlows {
+public class Arrays {
 
-    // BRANCHING
     public static void main(String[] args) {
+        // Define an array
+        int[] arrayOfIntegers;
+        // Initialize an array
+        arrayOfIntegers = new int[5];
 
-        int myAge = 31;
+        // same in one line
+        int[] anotherArray = new int[10];
 
-        // SIMPLE IF STATEMENT
-        if (myAge > 64) {
-            System.out.println("Retirement Time");
-        } else if (myAge < 7) {
-            System.out.println("Kindergarden time");
-        } else {
-            System.out.println("Work time!");
+        // PRINT THE ALPHABET
+        System.out.println(initAlphabet());
+
+
+        // Define the array and initialize using shorthand notation
+        String[] cities = {
+                "Riga",
+                "London",
+                "Paris"
+        };
+
+        // This is equal to
+        String[] cities2 = new String[3];
+        cities2[0] = "Tokyo";
+        cities2[1] = "Los Angeles";
+        cities2[2] = "Singapure";
+
+        for (String city :
+                cities2) {
+            System.out.print(city + ",");
         }
 
-        // SWITCH STATEMENTS
-        switch (myAge) {
-            case 5:
-                System.out.println("5 years old");
-                break;
-            case 31:
-                System.out.println("31 years old");
-                break;
-            case 55:
-                System.out.println("55 years old");
-                break;
-            default:
-                System.out.println("Some other non-mentioned age");
+//        cities2 = new String[5];
+//        cities2[0] = "Riga";
+//        cities2[1] = "London";
+//        cities2[2] = "Paris";
+//        cities2[3] = "Tokyo";
+//        cities2[4] = "Los Angeles";
+
+
+        String[] newCities = new String[3];
+        System.arraycopy(cities, 0, newCities, 0, cities.length);
+
+        for (String city :
+                newCities) {
+            System.out.print(city + ",");
         }
 
+        // TWO DIMENSIONAL ARRAYS
 
-        // SIMPLE FOR LOOP
+        int[][] points = new int[10][10];
+
+        points[0][0] = 99;
+        points[0][1] = 5;
+//        System.out.println(points);
+
         for (int i = 0; i < 10; i++) {
-            System.out.println("Are you finished yet? " + i);
-        }
-        System.out.println("Finally!");
-
-        // SIMPLE FOREACH EXAMPLE
-        String[] students = new String[5];
-        students[0] = "Laura";
-        students[1] = "Jekaterina";
-        students[2] = "Marina";
-        students[3] = "Tatjana";
-
-        for (String studentName :
-                students) {
-            System.out.println(studentName);
-        }
-
-        int i = 0;
-        while( i < 20 ) {
-            System.out.println("Loop is still running " + i);
-            i++;
-        }
-
-
-        //DO WHILE loops are running at least ONCE
-        do {
-            System.out.println("This should be executed at least once");
-        } while ( i < 0 );
-
-
-        // INFINITE LOOP WITH BREAK
-        // we will stop the loop when breakCondition is > 10
-        int breakCondition = 0;
-        do {
-            if( breakCondition > 10 ) {
-                break;
+            System.out.println();
+            for (int j = 0; j < 10; j++) {
+                System.out.print(points[i][j] + " ");
             }
-            breakCondition++;
-            System.out.println("BreakCondition: " + breakCondition);
-        } while (true);
-        System.out.println("We are out of infinite loop");
-
-        // A loop where we scip elements from 3 to 7
-        for (int j = 0; j < 10; j++) {
-            if(j > 3 && j < 7){
-                continue;
-            }
-            System.out.println("Some element that is not between 3 and 7 not included:" + j);
         }
 
+    }
+
+
+    static char[] initAlphabet() {
+
+        char[] alphabet = new char[26];
+        for (int i = 0; i < 26; i++) {
+            alphabet[i] = (char) ('A' + i);
+        }
+        return alphabet;
     }
 }
