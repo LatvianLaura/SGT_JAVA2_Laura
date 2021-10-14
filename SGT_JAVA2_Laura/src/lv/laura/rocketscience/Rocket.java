@@ -1,5 +1,6 @@
 package lv.laura.rocketscience;
 
+
 /**
  * Rocket class for building spaceships
  */
