@@ -29,7 +29,7 @@ public class Main {
 
 
         Rectangle rectangle = new Rectangle(2, 3);
-        Square square = new Square(3,3);
+        Square square = new Square(18);
 
         rectangle.printPerimeter();
         rectangle.printArea();

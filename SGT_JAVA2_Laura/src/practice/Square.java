@@ -2,12 +2,11 @@ package practice;
 
 public class Square extends Rectangle{
 public Square () {
-
 }
-public  Square (double lenght, double breadth) {
+public  Square (double lenght) {
     super(lenght,lenght);
 }
-    public void printArea  (double length, double breadth) {
+    public void printArea  (double length) {
         System.out.println("The area is " + (4*length));
     }
 
