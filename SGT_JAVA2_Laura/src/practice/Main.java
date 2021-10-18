@@ -15,8 +15,8 @@ public class Main {
         //3 - method of parent class by object of child class
         childClass.printParent();
 
-        //4 we can not use private method without
-       // parentClass.printSomethingPrivate();
+        //4 we can use private method only within the same class, otherwise it will not work!!!
+        //parentClass.printSomethingPrivate();
         //childClass.printSomethingPrivate();
 
         Employee employee = new Employee("John", 30, "254545454", "Riga, Jurmalas gatve 100", 20000.21);
