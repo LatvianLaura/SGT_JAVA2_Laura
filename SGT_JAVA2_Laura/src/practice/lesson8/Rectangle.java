@@ -1,24 +1,25 @@
-package practice;
+package practice.lesson8;
 
-public class Rectangle {
-
-    private double length;
+public class Rectangle extends Shape {
+    protected double length;
     private double breadth;
 
-    public void printArea  () {
-        System.out.println("The area is " + (length + breadth)*2);
+    //for task 6
+    public void printHelloMessageRectangle (){
+        System.out.println("This is rectangular shape");
     }
-
-    public void printPerimeter  () {
-        System.out.println("The perimeter is " + (length * breadth));
+    public void printPerimeter (){
+        System.out.println("The perimeter is: " + 2*(length+breadth) );
     }
-
-    public Rectangle() {
+    public void printArea (){
+        System.out.println("The area is: " + length*breadth);
     }
-
     public Rectangle(double length, double breadth) {
         this.length = length;
         this.breadth = breadth;
+    }
+
+    public Rectangle() {
     }
 
     public double getLength() {
@@ -36,4 +37,5 @@ public class Rectangle {
     public void setBreadth(double breadth) {
         this.breadth = breadth;
     }
+
 }

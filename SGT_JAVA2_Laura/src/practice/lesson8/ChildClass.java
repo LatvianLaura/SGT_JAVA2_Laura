@@ -1,4 +1,4 @@
-package practice;
+package practice.lesson8;
 
 
 public class ChildClass extends ParentClass {

@@ -1,4 +1,4 @@
-package practice;
+package practice.lesson8;
 
 public class Employee extends Member {
     private String specialization;
