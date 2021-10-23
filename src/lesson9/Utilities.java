@@ -7,16 +7,17 @@ public class Utilities {
             System.out.println("delete");
         }
     }
-    public static class  Create {
-        public static void createFile() {
-            System.out.println("Create file");
+
+    public static class Create {
+        public static void createFile(){
+            System.out.println("Created file");
         }
     }
 }
 
-   class AnotherMainApplication {
-       public static void main(String[] args) {
-           Utilities.Create.createFile();
-
-       }
+class AnotherMainApplication {
+    public static void main(String[] args) {
+        Utilities.Create.createFile();
+        Math.random();
+    }
 }

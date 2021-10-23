@@ -1,5 +1,8 @@
 package lesson9;
 
+/**
+ *
+ */
 public final class FinalClasses {
 
     private int someInt;
@@ -9,11 +12,13 @@ public final class FinalClasses {
      * @param anotherInt
      * @return
      */
-
-    public int multiplyBySomeInt (int anotherInt) {
-
-    return  someInt * anotherInt;
+    public int multiplyBySomeInt(int anotherInt) {
+        return someInt * anotherInt;
+    }
 }
 
-}
+// FINAL CLASSES CANNOT BE EXTENDED
+//class ExtendedFinalClasses extends FinalClasses {
+//
+//}
 
